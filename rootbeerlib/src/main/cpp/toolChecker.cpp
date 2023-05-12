@@ -92,6 +92,8 @@ int Java_com_scottyab_rootbeer_RootBeerNative_checkForRoot( JNIEnv* env, jobject
 {
 
     int binariesFound = 0;
+    char str[80];
+    sprintf(str, "Value of 1 = %d", 1);
 
     int stringCount = (env)->GetArrayLength(pathsArray);
 
